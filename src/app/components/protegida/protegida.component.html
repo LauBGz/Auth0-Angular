@@ -1,0 +1,7 @@
+<h1>Perfil usuario</h1>
+<hr>
+<pre *ngIf="auth.userProfile$ | async as profile">
+<!-- Esperemos a que el observable responda y esa respuesta la asignamos a profile -->
+    <code>{{ profile | json }}</code>
+<!-- Devuelve un id único ("sub") para el usuario según el método que ha seleccionado para loguearse -->
+</pre>
